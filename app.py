@@ -27,7 +27,7 @@ def reser_counter():
 resetButton = ctk.CTkButton(app,text="Reset Counter", height=40,width=120,font=("Arial", 20), text_color="white", fg_color= "teal")
 resetButton.pack()
 
-model = torch.hub.load('ultralytics/yolov5', 'custom', path = 'yolov5/runs/train/exp2/weights/last.pt',force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path = 'yolov5/runs/train/exp/weights/last.pt',force_reload=True)
 cap = cv2.VideoCapture(0)
 
 def detect():
